@@ -1,21 +1,21 @@
 version: '3'
 services:
   movies:
-    image: durgaprasad9346/new1:latest
+    image: durgaprasad9346/facebook
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   train:
-    image: durgaprasad9346/fb:latest
+    image: durgaprasad9346/insta:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   dth:
-    image: durgaprasad9346/new:latest
+    image: durgaprasad9346/whatsapp:latest
     ports:
       - "83:80"
     deploy:
