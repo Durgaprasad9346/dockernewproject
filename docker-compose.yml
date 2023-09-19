@@ -3,20 +3,20 @@ services:
   movies:
     image: durgaprasad9346/facebook
     ports:
-      - "81:80"
+      - "86:80"
     deploy:
       replicas: 3
 
   train:
     image: durgaprasad9346/insta:latest
     ports:
-      - "82:80"
+      - "87:80"
     deploy:
       replicas: 3
 
   dth:
     image: durgaprasad9346/whatsapp:latest
     ports:
-      - "83:80"
+      - "88:80"
     deploy:
       replicas: 3
